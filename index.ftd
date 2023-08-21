@@ -926,9 +926,11 @@ classes if { cta-left-hug.mouse-in }: animate-right
 -- ftd.column:
 width.fixed.percent: 45
 align-self: center
-spacing.fixed.px: 24
 css: [$assets.files.assets.animate.css]
 classes if { cta-left-hug.mouse-in }: animate-left
+
+-- ftd.column:
+spacing.fixed.px: 24
 
 -- ftd.text: $cta-left-hug.tag
 if: { cta-left-hug.tag != NULL }
@@ -954,6 +956,8 @@ $cta-left-hug.body
 -- button-solid: $cta-left-hug.primary-cta
 if: { cta-left-hug.primary-cta-link != NULL }
 cta-link: $cta-left-hug.primary-cta-link
+
+-- end: ftd.column
 
 -- end: ftd.column
 
@@ -989,9 +993,13 @@ $on-mouse-leave$: $ftd.set-bool($a = $cta-right-hug.mouse-in, v = false)
 
 -- ftd.column:
 width.fixed.percent: 45
-align-self: center
+align-content: center
 spacing.fixed.px: 24
 classes if { cta-right-hug.mouse-in }: animate-right
+
+-- ftd.column:
+align-content: left
+spacing.fixed.px: 24
 
 -- ftd.text: $cta-right-hug.tag
 if: { cta-right-hug.tag != NULL }
@@ -1017,6 +1025,8 @@ $cta-right-hug.body
 -- button-solid: $cta-right-hug.primary-cta
 if: { cta-right-hug.primary-cta-link != NULL }
 cta-link: $cta-right-hug.primary-cta-link
+
+-- end: ftd.column
 
 -- end: ftd.column
 
