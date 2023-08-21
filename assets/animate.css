@@ -1,0 +1,25 @@
+.animate-left{
+
+ animation-name: fadeInLeft;
+  animation-duration: 1s;
+  visibility: visible;
+}
+
+.animate-right{
+
+ animation-name: fadeInRight;
+  animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes fadeInLeft {
+  0%   {opacity: 0;transform: translate3d(-20%,0,0);}
+  100% {opacity: 1;transform: none;}
+}
+
+
+@keyframes fadeInRight {
+  0%   {opacity: 0;transform: translate3d(20%,0,0);}
+  100% {opacity: 1;transform: none;}
+}
+
