@@ -16,7 +16,7 @@ optional string site-name:
 pr.toc-item list sections: 
 pr.toc-item list sub-sections: 
 pr.toc-item list toc:
-ftd.image-src menu-icon: $assets.files.assetshamburger.svg
+ftd.image-src menu-icon: $assets.files.assets.hamburger.svg
 optional pr.toc-item current-section: 
 optional pr.toc-item current-subsection: 
 optional pr.toc-item current-page: 
@@ -267,7 +267,7 @@ style: regular
 
 -- ftd.image:
 if: { header-desktop.current-subsection != NULL }
-src: $assets.files.assetsright.svg
+src: $assets.files.assets.right.svg
 align-self: center
 
 -- ftd.text: $header-desktop.current-subsection.title
@@ -280,7 +280,7 @@ align-self: center
 
 -- ftd.image:
 if: { header-desktop.current-page != NULL }
-src: $assets.files.assetsright.svg
+src: $assets.files.assets.right.svg
 align-self: center
 
 -- ftd.text: $header-desktop.current-page.title 
@@ -325,7 +325,7 @@ url: $obj.url
 -- component login-signup:
 optional string login:
 optional string login-btn-url: 
-ftd.image-src icon-github: $assets.files.assetsicon-github.svg
+ftd.image-src icon-github: $assets.files.assets.icon-github.svg
 boolean $hover: false
 
 -- ftd.row:
@@ -402,7 +402,7 @@ link: $login-signup-desktop.login-btn-url
 -- component login-signup-mobile:
 optional string login:
 optional string login-btn-url: 
-optional ftd.image-src icon-github: $assets.files.assetsicon-github.svg 
+optional ftd.image-src icon-github: $assets.files.assets.icon-github.svg 
 
 -- ftd.column:
 spacing.fixed.px: 32
@@ -688,13 +688,13 @@ width: fill-container
 
 -- ftd.image: 
 if: { !header-mobile.show-section }
-src: $assets.files.assetsdown-arrow-dark.svg
+src: $assets.files.assets.down-arrow-dark.svg
 height: hug-content
 width.fixed.px: 12
 
 -- ftd.image: 
 if: { header-mobile.show-section }
-src: $assets.files.assetsup-arrow-dark.svg
+src: $assets.files.assets.up-arrow-dark.svg
 width.fixed.px: 12
 
 -- end: ftd.row
@@ -848,7 +848,7 @@ z-index: 1
 $on-click$: $ftd.toggle($a = $mobile-sidebar.sidebar-open)
 
 -- ftd.image:
-src: $assets.files.assetscross.svg
+src: $assets.files.assets.cross.svg
 height.fixed.px: 24
 width: hug-content
 anchor: window
@@ -1014,7 +1014,7 @@ children: $header-item-mobile.children
 
 -- component github-button:
 string github-url:
-ftd.image-src icon-github: $assets.files.assetsicon-github.svg 
+ftd.image-src icon-github: $assets.files.assets.icon-github.svg 
 
 -- ftd.column:
 

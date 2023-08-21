@@ -263,7 +263,7 @@ logo-width: $doc-page-desktop.logo-width
 site-logo: $doc-page-desktop.site-logo
 site-url: $doc-page-desktop.site-url
 site-name: $doc-page-desktop.site-name
-menu-icon: $assets.files.static.hamburger.svg
+menu-icon: $assets.files.assets.hamburger.svg
 github-icon: $doc-page-desktop.github-icon
 github-url: $doc-page-desktop.github-url
 breadcrumb: $doc-page-desktop.breadcrumb
@@ -386,7 +386,7 @@ site-logo: $doc-page-mobile.site-logo
 site-url: $doc-page-mobile.site-url
 site-name: $doc-page-mobile.site-name
 logo-height: 38
-menu-icon: $assets.files.static.hamburger.svg
+menu-icon: $assets.files.assets.hamburger.svg
 github-icon: $doc-page-mobile.github-icon
 github-url: $doc-page-mobile.github-url
 blog: $doc-page-mobile.blog
@@ -442,7 +442,7 @@ height.fixed.calc: 100% - 0px
 $on-click$: $ftd.set-bool($a = $doc-page-mobile.open-right-sidebar-info, v = false)
 
 -- ftd.image:
-src: $assets.files.static.cross-dark.svg
+src: $assets.files.assets.cross-dark.svg
 height.fixed.px: 16
 width: auto
 margin-top.px: 30
@@ -645,8 +645,8 @@ $on-click$: $ftd.toggle($a = $toc-instance.toc-clone.is-open)
 
 -- ftd.image:
 if: { !ftd.is_empty(toc-instance.toc.children) }
-src: $assets.files.static.right.svg
-src if { !toc-instance.toc-clone.is-open }: $assets.files.static.down.svg
+src: $assets.files.assets.right.svg
+src if { !toc-instance.toc-clone.is-open }: $assets.files.assets.down.svg
 align-self: center
 
 -- ftd.text:
