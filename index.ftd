@@ -904,13 +904,18 @@ optional string tag:
 optional ftd.image-src image:
 boolean $mouse-in: false
 
+-- ftd.column:
+width: fill-container
+
+-- ftd.desktop:
+
 -- ftd.row:
 width: fill-container
 align-content: center
 spacing: space-between
-margin-vertical.px: 64
 $on-mouse-enter$: $ftd.set-bool($a = $cta-left-hug.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $cta-left-hug.mouse-in, v = false)
+margin-vertical.px: 64
 
 -- ftd.column:
 width.fixed.percent: 50
@@ -963,6 +968,54 @@ cta-link: $cta-left-hug.primary-cta-link
 
 -- end: ftd.row
 
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+spacing.fixed.px: 48
+$on-mouse-enter$: $ftd.set-bool($a = $cta-left-hug.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $cta-left-hug.mouse-in, v = false)
+margin-vertical.px: 48
+
+-- ftd.image:
+if: { cta-left-hug.image != NULL }
+src: $cta-left-hug.image
+width: fill-container
+
+-- ftd.text: $cta-left-hug.tag
+if: { cta-left-hug.tag != NULL }
+background.solid: $inherited.colors.accent.primary
+color: $inherited.colors.info.text
+border-radius.px: 30
+padding-vertical.px: 5
+role: $inherited.types.link
+padding-horizontal.px: 11
+
+-- ftd.text: $cta-left-hug.title
+if: { cta-left-hug.title != NULL }
+role: $inherited.types.heading-large
+color: $inherited.colors.text
+
+-- ftd.text: 
+if: { cta-left-hug.body != NULL }
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+$cta-left-hug.body
+
+-- button-solid: $cta-left-hug.primary-cta
+if: { cta-left-hug.primary-cta-link != NULL }
+cta-link: $cta-left-hug.primary-cta-link
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
 -- end: cta-left-hug
 
 
@@ -983,13 +1036,18 @@ optional string tag:
 optional ftd.image-src image:
 boolean $mouse-in: false
 
+-- ftd.column:
+width: fill-container
+
+-- ftd.desktop:
+
 -- ftd.row:
 width: fill-container
 align-content: center
 spacing: space-between
-margin-vertical.px: 64
 $on-mouse-enter$: $ftd.set-bool($a = $cta-right-hug.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $cta-right-hug.mouse-in, v = false)
+margin-vertical.px: 64
 
 -- ftd.column:
 width.fixed.percent: 45
@@ -1042,5 +1100,54 @@ classes if { cta-right-hug.mouse-in }: animate-left
 -- end: ftd.column
 
 -- end: ftd.row
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+spacing.fixed.px: 48
+margin-vertical.px: 48
+$on-mouse-enter$: $ftd.set-bool($a = $cta-right-hug.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $cta-right-hug.mouse-in, v = false)
+
+-- ftd.text: $cta-right-hug.tag
+if: { cta-right-hug.tag != NULL }
+background.solid: $inherited.colors.accent.primary
+color: $inherited.colors.info.text
+border-radius.px: 30
+padding-vertical.px: 5
+role: $inherited.types.link
+padding-horizontal.px: 11
+
+-- ftd.text: $cta-right-hug.title
+if: { cta-right-hug.title != NULL }
+role: $inherited.types.heading-large
+color: $inherited.colors.text
+
+-- ftd.text: 
+if: { cta-right-hug.body != NULL }
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+$cta-right-hug.body
+
+-- button-solid: $cta-right-hug.primary-cta
+if: { cta-right-hug.primary-cta-link != NULL }
+cta-link: $cta-right-hug.primary-cta-link
+
+-- ftd.image:
+if: { cta-right-hug.image != NULL }
+src: $cta-right-hug.image
+width: fill-container
+classes if { cta-right-hug.mouse-in }: animate-left
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.column
 
 -- end: cta-right-hug
