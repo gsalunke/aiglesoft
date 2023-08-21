@@ -5,6 +5,10 @@
   visibility: visible;
 }
 
+.animate-left > children{
+	width: auto;
+}
+
 .animate-right{
 
  animation-name: fadeInRight;
