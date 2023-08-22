@@ -6,11 +6,11 @@ export: markdown,h0,h1,h2,h3
 
 -- boolean $tc-pop-up-status: false
 
--- page:
+-- ws.page:
 
--- page.body:
+-- ws.page.body:
 
--- hero-right-hug-expanded: We transform ideas into digital outcomes.
+-- ws.hero-right-hug-expanded: We transform ideas into digital outcomes.
 image: $assets.files.assets.hero-image-2.jpg
 primary-cta: Get started for free
 primary-cta-link: www.fastn.com
@@ -19,13 +19,13 @@ error-message: No credit card needed, free 30-day trial
 We are an award-winning strategic design company that provides consultancy
 services and help you create outstanding digital products.
 
--- features-card: We Transform ideas into digital outcomes
+-- ws.features-card: We Transform ideas into digital outcomes
 features: $common.list-of-features
 
 We are an award-winning strategic design company that provides consultancy
 services and help you create outstanding digital products.
 
--- cta-left-hug: Engage your most valuable visitors
+-- ws.cta-left-hug: Engage your most valuable visitors
 tag: ENHANCE ENGAGEMENT
 image: $assets.files.assets.hero-image.jpg
 
@@ -39,7 +39,7 @@ ipsum suscipit
 
 - I am dummy pointer text.
 
--- cta-right-hug: Solution that grows with you
+-- ws.cta-right-hug: Solution that grows with you
 image: $assets.files.assets.cta-3-image.png
 
 Sodales tempor sapien quaerat ipsum undo congue laoreet turpis neque auctor
@@ -55,13 +55,13 @@ ipsum suscipit
 - Tempor sapien quaerat an ipsum laoreet purus and sapien dolor an ultrice ipsum
   aliquam undo congue dolor cursus
 
--- banner-card: See how much faster you can get paid with fastn
+-- ws.banner-card: See how much faster you can get paid with fastn
 info-cards: $common.list-of-info-cards
 
 Use our calculator to see how many days we can free up in cash flow for your
 business.
 
--- cta-left-hug: Create
+-- ws.cta-left-hug: Create
 image: $assets.files.assets.hero-image.jpg
 primary-cta: Get started
 primary-cta-link: www.fastn.com
@@ -75,7 +75,7 @@ experiences that look awesome and put your brand centerstage.
 
 - I am dummy pointer text.
 
--- logo-cloud: Trusted by the top companies in this industry
+-- ws.logo-cloud: Trusted by the top companies in this industry
 logo-list: $common.list-of-logos
 tag: ENHANCE ENGAGEMENT
 
@@ -89,7 +89,7 @@ consultancy services and help you create outstanding digital products.
 
 - I am dummy pointer text. 
 
--- cta-left-hug: Welcome Studio most valuable visitors
+-- ws.cta-left-hug: Welcome Studio most valuable visitors
 tag: ANALYZE
 image: $assets.files.assets.hero-image.jpg
 
@@ -99,7 +99,7 @@ experiences that look awesome and put your brand centerstage.
 - Welcome Studio gives you all the tools you need to create and host virtual
 experiences that look awesome and put your brand centerstage.
 
--- hero-with-image: We transform ideas into digital outcomes.
+-- hero-bottom-hug: We transform ideas into digital outcomes.
 image: $assets.files.assets.hero-bottom-hug.jpg
 
 We are an award-winning strategic design company that provides consultancy
@@ -117,7 +117,7 @@ faqs-list: $common.list-of-faqs
 Flex is the only saas business platform that lets you run your business on one
 platform, seamlessly across all digital channels.
 
--- end: page
+-- end: ws.page
 
 
 
@@ -1741,36 +1741,51 @@ $logo-lists.body
 
 
 
--- component hero-with-image:
-caption title:
-body body:
-ftd.image-src image:
-string id: hero-with-image
+-- component hero-bottom-hug:
+optional caption title:
+optional body body:
+optional ftd.image-src image:
+optional string primary-cta: 
+optional string primary-cta-link: 
+optional string secondary-cta: 
+optional string secondary-cta-link:
+optional string error-message:
+string id: hero-bottom-hug
 
 -- ftd.column:
 width: fill-container
-id: $hero-with-image.id
+id: $hero-bottom-hug.id
 classes: section
 
 -- ftd.desktop:
 
--- hero-with-image-desktop: $hero-with-image.title
-body: $hero-with-image.body
-image: $hero-with-image.image
+-- hero-bottom-hug-desktop: $hero-bottom-hug.title
+body: $hero-bottom-hug.body
+image: $hero-bottom-hug.image
+primary-cta: $hero-bottom-hug.primary-cta
+primary-cta-link: $hero-bottom-hug.primary-cta-link
+secondary-cta: $hero-bottom-hug.secondary-cta
+secondary-cta-link: $hero-bottom-hug.secondary-cta-link
+error-message: $hero-bottom-hug.error-message
 
 -- end: ftd.desktop
 
 -- ftd.mobile:
 
--- hero-with-image-mobile: $hero-with-image.title
-body: $hero-with-image.body
-image: $hero-with-image.image
+-- hero-bottom-hug-mobile: $hero-bottom-hug.title
+body: $hero-bottom-hug.body
+image: $hero-bottom-hug.image
+primary-cta: $hero-bottom-hug.primary-cta
+primary-cta-link: $hero-bottom-hug.primary-cta-link
+secondary-cta: $hero-bottom-hug.secondary-cta
+secondary-cta-link: $hero-bottom-hug.secondary-cta-link
+error-message: $hero-bottom-hug.error-message
 
 -- end: ftd.mobile
 
 -- end: ftd.column
 
--- end: hero-with-image
+-- end: hero-bottom-hug
 
 
 
@@ -1781,10 +1796,15 @@ image: $hero-with-image.image
 
 
 
--- component hero-with-image-desktop:
+-- component hero-bottom-hug-desktop:
 optional caption title:
 optional body body:
 optional ftd.image-src image:
+optional string primary-cta: 
+optional string primary-cta-link: 
+optional string secondary-cta: 
+optional string secondary-cta-link:
+optional string error-message:
 
 -- ftd.column:
 align-content: center
@@ -1797,30 +1817,49 @@ spacing.fixed.px: 24
 width.fixed.percent: 50
 align-content: center
 
--- ftd.text: $hero-with-image-desktop.title
-if: { hero-with-image-desktop.title != NULL }
+-- ftd.text: $hero-bottom-hug-desktop.title
+if: { hero-bottom-hug-desktop.title != NULL }
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
 text-align: center
 
 -- ftd.text:
-if: { hero-with-image-desktop.body != NULL }
+if: { hero-bottom-hug-desktop.body != NULL }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 text-align: center
 
-$hero-with-image-desktop.body
+$hero-bottom-hug-desktop.body
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 32
+
+-- button-solid: $hero-bottom-hug-desktop.primary-cta
+if: { hero-bottom-hug-desktop.primary-cta != NULL }
+cta-link: $hero-bottom-hug-desktop.primary-cta-link
+
+-- button-solid: $hero-bottom-hug-desktop.secondary-cta
+if: { hero-bottom-hug-desktop.secondary-cta != NULL }
+cta-link: $hero-bottom-hug-desktop.secondary-cta-link
+
+-- end: ftd.row
+
+-- ftd.text: $hero-bottom-hug-desktop.error-message
+if: { hero-bottom-hug-desktop.error-message != NULL }
+role: $inherited.types.fine-print
+color: $inherited.colors.text
 
 -- end: ftd.column
 
 -- ftd.image:
-if: { hero-with-image-desktop.image != NULL }
-src: $hero-with-image-desktop.image
+if: { hero-bottom-hug-desktop.image != NULL }
+src: $hero-bottom-hug-desktop.image
 width: fill-container
 
 -- end: ftd.column
 
--- end: hero-with-image-desktop
+-- end: hero-bottom-hug-desktop
 
 
 
@@ -1831,10 +1870,15 @@ width: fill-container
 
 
 
--- component hero-with-image-mobile:
+-- component hero-bottom-hug-mobile:
 optional caption title:
 optional body body:
 optional ftd.image-src image:
+optional string primary-cta: 
+optional string primary-cta-link: 
+optional string secondary-cta: 
+optional string secondary-cta-link:
+optional string error-message:
 
 -- ftd.column:
 align-content: center
@@ -1845,30 +1889,49 @@ spacing.fixed.px: 45
 spacing.fixed.px: 24
 width.fixed.percent: 70
 
--- ftd.text: $hero-with-image-mobile.title
-if: { hero-with-image-mobile.title != NULL }
+-- ftd.text: $hero-bottom-hug-mobile.title
+if: { hero-bottom-hug-mobile.title != NULL }
 role: $inherited.types.heading-medium
 color: $inherited.colors.text-strong
 text-align: center
 
 -- ftd.text:
-if: { hero-with-image-mobile.body != NULL }
+if: { hero-bottom-hug-mobile.body != NULL }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 text-align: center
 
-$hero-with-image-mobile.body
+$hero-bottom-hug-mobile.body
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 32
+
+-- button-solid: $hero-bottom-hug-mobile.primary-cta
+if: { hero-bottom-hug-mobile.primary-cta != NULL }
+cta-link: $hero-bottom-hug-mobile.primary-cta-link
+
+-- button-solid: $hero-bottom-hug-mobile.secondary-cta
+if: { hero-bottom-hug-mobile.secondary-cta != NULL }
+cta-link: $hero-bottom-hug-mobile.secondary-cta-link
+
+-- end: ftd.row
+
+-- ftd.text: $hero-bottom-hug-mobile.error-message
+if: { hero-bottom-hug-mobile.error-message != NULL }
+role: $inherited.types.fine-print
+color: $inherited.colors.text
 
 -- end: ftd.column
 
 -- ftd.image:
-if: { hero-with-image-mobile.image != NULL }
-src: $hero-with-image-mobile.image
+if: { hero-bottom-hug-mobile.image != NULL }
+src: $hero-bottom-hug-mobile.image
 width: fill-container
 
 -- end: ftd.column
 
--- end: hero-with-image-mobile
+-- end: hero-bottom-hug-mobile
 
 
 
@@ -1943,12 +2006,17 @@ if: { client-card-desktop.body != NULL }
 
 $client-card-desktop.body
 
--- ftd.row:
-margin-top.px: 32
-spacing.fixed.px: 72
+-- ftd.column:
 width: fill-container
-overflow-y: auto
+margin-vertical.px: 48
 align-content: center
+max-width.fixed.px: 1440
+
+-- ftd.row:
+width.fixed.percent: 90
+spacing.fixed.px: 72
+overflow-x: auto
+padding-vertical.px: 16
 
 -- client-lists:
 $loop$: $client-card-desktop.client-list as $obj
@@ -1956,6 +2024,8 @@ logo: $obj.logo
 link: $obj.link
 
 -- end: ftd.row
+
+-- end: ftd.column
 
 -- end: ftd.column
 
@@ -2341,9 +2411,10 @@ width: fill-container
 spacing: space-between
 align-content: center
 padding-vertical.px: 24
-padding-horizontal.px: 24
+padding-horizontal.px: 48
 border-top-width.px: 1
 border-color: $inherited.colors.border-strong
+background.solid: $inherited.colors.background.step-1
 
 -- ftd.text: $footer-badge.title
 role: $inherited.types.copy-small
@@ -2355,7 +2426,7 @@ color: $inherited.colors.text
 $on-click$: $ftd.set-bool($a = $tc-pop-up-status, v = true)
 
 -- ftd.image:
-src: $assets.files.static.fastn-badge-white.svg
+src: $assets.files.assets.fastn-badge-white.svg
 link: https://fastn.com/
 open-in-new-tab: true
 width.fixed.px: 140
@@ -2385,7 +2456,7 @@ color: $inherited.colors.text
 $on-click$: $ftd.set-bool($a = $tc-pop-up-status, v = true)
 
 -- ftd.image:
-src: $assets.files.static.fastn-badge-white.svg
+src: $assets.files.assets.fastn-badge-white.svg
 link: https://fastn.com/
 open-in-new-tab: true
 width.fixed.px: 140
@@ -2441,7 +2512,7 @@ align-self: end
 -- ftd.image:
 margin-right.px: 16
 margin-top.px: 16
-src: $assets.files.static.cross.svg
+src: $assets.files.assets.cross.svg
 width.fixed.px: 24
 height.fixed.px: 24
 $on-click$: $ftd.set-bool($a = $tc-pop-up-status, v = false)
@@ -2472,7 +2543,7 @@ margin-bottom.px: 8
 
 -- ftd.column:
 width: fill-container
-css: [ $assets.files.static.scroll.css ]
+css: [ $assets.files.assets.scroll.css ]
 classes: body
 padding-vertical.px: 48
 padding-horizontal.px: 48
@@ -2526,7 +2597,7 @@ align-self: end
 -- ftd.image:
 margin-right.px: 8
 margin-top.px: 8
-src: $assets.files.static.cross.svg 
+src: $assets.files.assets.cross.svg 
 height.fixed.px: 24
 $on-click$: $ftd.set-bool($a = $tc-pop-up-status, v = false)
 
@@ -2555,7 +2626,7 @@ margin-bottom.px: 8
 
 -- ftd.column:
 width: fill-container
-css: [ $assets.files.static.scroll.css ]
+css: [ $assets.files.assets.scroll.css ]
 classes: body
 padding-vertical.px: 48
 padding-horizontal.px: 48
@@ -2808,7 +2879,7 @@ margin-top.px: 24
 spacing.fixed.px: 8
 
 -- ftd.image:
-src: $assets.files.static.location.svg
+src: $assets.files.assets.location.svg
 width.fixed.px: 26
 height.fixed.px: 26
 
@@ -2836,7 +2907,7 @@ spacing.fixed.px: 12
 align-content: center
 
 -- ftd.image:
-src: $assets.files.static.email.svg
+src: $assets.files.assets.email.svg
 width: auto
 height.fixed.px: 16
 
@@ -2853,7 +2924,7 @@ spacing.fixed.px: 10
 align-content: center
 
 -- ftd.image:
-src: $assets.files.static.phone.svg
+src: $assets.files.assets.phone.svg
 width.fixed.px: 18 
 
 -- ftd.text: $contact-form-desktop.phone
@@ -2961,7 +3032,7 @@ margin-top.px: 24
 spacing.fixed.px: 8
 
 -- ftd.image:
-src: $assets.files.static.location.svg
+src: $assets.files.assets.location.svg
 width.fixed.px: 26
 height.fixed.px: 26
 
@@ -2989,7 +3060,7 @@ spacing.fixed.px: 8
 align-content: center
 
 -- ftd.image:
-src: $assets.files.static.email.svg
+src: $assets.files.assets.email.svg
 width: auto
 
 -- ftd.image:
@@ -3004,7 +3075,7 @@ spacing.fixed.px: 10
 align-content: center
 
 -- ftd.image:
-src: $assets.files.static.phone.svg
+src: $assets.files.assets.phone.svg
 width.fixed.px: 18 
 
 -- ftd.text: $contact-form-mobile.phone
@@ -3357,7 +3428,7 @@ color: $inherited.colors.background.base
 link: $featured-post-card-desktop.cta-primary-url
 
 -- ftd.image:
-src: $assets.files.static.tick.svg
+src: $assets.files.assets.tick.svg
 align-self: center
 
 -- end: ftd.row
@@ -3379,7 +3450,7 @@ color: $inherited.colors.background.base
 link: $featured-post-card-desktop.cta-secondary-url
 
 -- ftd.image:
-src: $assets.files.static.tick.svg
+src: $assets.files.assets.tick.svg
 align-self: center
 
 -- end: ftd.row
@@ -3469,7 +3540,7 @@ color: $inherited.colors.background.base
 link: $featured-post-card-mobile.cta-primary-url
 
 -- ftd.image:
-src: $assets.files.static.tick.svg
+src: $assets.files.assets.tick.svg
 align-self: center
 
 -- end: ftd.row
@@ -3488,7 +3559,7 @@ color: $inherited.colors.background.base
 link: $featured-post-card-mobile.cta-secondary-url
 
 -- ftd.image:
-src: $assets.files.static.tick.svg
+src: $assets.files.assets.tick.svg
 align-self: center
 
 -- end: ftd.row
@@ -3952,6 +4023,8 @@ optional body body:
 ftd.ui list pricing-cards:
 
 -- ftd.column:
+width: fill-container
+align-content: center
 
 -- ftd.desktop:
 
@@ -3996,6 +4069,8 @@ spacing.fixed.px: 32
 if: { pricing-desktop.title!= NULL }
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
+text-align: center
+width.fixed.percent: 50
 
 -- ftd.text:
 if: { pricing-desktop.body!= NULL }
@@ -4110,12 +4185,12 @@ margin-bottom.px: 32
 align-content: center
 spacing.fixed.px: 4
 color: $inherited.colors.text-strong
-role: $inherited.types.heading-large
+role: $inherited.types.heading-medium
 
 -- ftd.text: $pricing-card.currency
 
 -- ftd.integer: $pricing-card.price
-style: regular
+role: $inherited.types.heading-large
 
 -- ftd.text: \/
 

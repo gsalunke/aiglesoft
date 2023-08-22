@@ -397,23 +397,23 @@ string link:
 
 -- clients: 
 logo: $assets.files.assets.logo-1.svg
-link: landing/
+link: index.html
 
 -- clients: 
 logo: $assets.files.assets.logo-2.svg
-link: landing/
+link: index.html
 
 -- clients: 
 logo: $assets.files.assets.logo-3.svg
-link: landing/
+link: index.html
 
 -- clients: 
 logo: $assets.files.assets.logo-4.svg
-link: landing/
+link: index.html
 
 -- clients: 
 logo: $assets.files.assets.logo-5.svg
-link: landing/
+link: index.html
 
 -- end: list-of-clients
 
