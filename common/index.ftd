@@ -305,42 +305,6 @@ index: 3
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ante
 in luctus rutrum. Sed eu orci mi.
 
--- testimonial:
-user: Priyanka
-designation: Fastn Builder
-avatar: $assets.files.assets.avatar.svg
-index: 3
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ante
-in luctus rutrum. Sed eu orci mi.
-
--- testimonial:
-user: Priyanka
-designation: Fastn Builder
-avatar: $assets.files.assets.avatar.svg
-index: 3
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ante
-in luctus rutrum. Sed eu orci mi.
-
--- testimonial:
-user: Priyanka
-designation: Fastn Builder
-avatar: $assets.files.assets.avatar.svg
-index: 3
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ante
-in luctus rutrum. Sed eu orci mi.
-
--- testimonial:
-user: Priyanka
-designation: Fastn Builder
-avatar: $assets.files.assets.avatar.svg
-index: 3
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ante
-in luctus rutrum. Sed eu orci mi.
-
 -- end: list-of-testimonials
 
 

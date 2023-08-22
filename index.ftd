@@ -2139,6 +2139,8 @@ common.testimonial list testimonials:
 width: fill-container
 spacing.fixed.px: 32
 align-content: center
+padding-horizontal.px: 24
+padding-vertical.px: 24
 
 -- ftd.text: $testimonials-card-mobile.title
 if: { testimonials-card-mobile.title != NULL }
