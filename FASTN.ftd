@@ -6,10 +6,12 @@ favicon: /-/gsalunke.github.io/aiglesoft/favicon.ico
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
 -- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/opensans-typography
+-- fastn.dependency: fastn-community.github.io/golden-sunlight-cs as cs
 
 -- fastn.auto-import: gsalunke.github.io/aiglesoft/FASTN/ds
 -- fastn.auto-import: gsalunke.github.io/aiglesoft/assets
 -- fastn.auto-import: gsalunke.github.io/aiglesoft/common
+-- fastn.auto-import: cs
 -- fastn.auto-import: doc-site
 
 -- fastn.sitemap:
