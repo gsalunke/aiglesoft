@@ -4012,6 +4012,7 @@ children: $pricing-desktop.pricing-cards
 spacing.fixed.px: 32
 margin-vertical.px: 48
 align-content: center
+max-width.fixed.px: 1120
 
 -- end: ftd.row
 
@@ -4089,7 +4090,7 @@ width.fixed.percent: 30
 width if { ftd.device == "mobile" }: fill-container
 background.solid: $inherited.colors.background.step-1
 border-radius.px: 12
-shadow: $shadow
+shadow: $shadow-14
 padding.px: 32
 
 -- ftd.row:
