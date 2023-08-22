@@ -4428,10 +4428,16 @@ $on-mouse-leave$: $ftd.set-bool($a = $member.hover, v = false)
 spacing.fixed.px: 32
 margin-bottom.px: 32
 
+-- ftd.column:
+css: [$assets.files.assets.animate.css]
+classes if { member.hover }: member-up
+
 -- ftd.image:
 src: $member.image
 width: fill-container
 border-radius.px: 20
+
+-- end: ftd.column
 
 -- ftd.column:
 width: fill-container

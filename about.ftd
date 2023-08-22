@@ -3,6 +3,12 @@
 full-width: true
 sidebar: false
 
+-- ws.hero-bottom-hug: We transform ideas into digital outcomes.
+image: $assets.files.assets.team-page-hero.jpg
+
+We are an award-winning strategic design company that provides consultancy
+services and help you create outstanding digital products.
+
 -- ws.team: Meet the amazing team behind Aiglesoft Inc 
 tag: OUR TEAM 
 
@@ -53,11 +59,5 @@ in eros elementum tristique. consectet adipiscing elit. Suspendisse varius enim
 in eros elementum tristique.
 
 -- end: ws.team
-
--- ws.hero-bottom-hug: We transform ideas into digital outcomes.
-image: $assets.files.assets.team-page-hero.jpg
-
-We are an award-winning strategic design company that provides consultancy
-services and help you create outstanding digital products.
 
 -- end: ws.page
