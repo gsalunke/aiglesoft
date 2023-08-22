@@ -110,6 +110,12 @@ client-list: $common.list-of-clients
 -- testimonials-card: Our Clients
 testimonials: $common.list-of-testimonials
 
+-- faqs: Frequently Asked Questions
+faqs-list: $common.list-of-faqs
+
+Flex is the only saas business platform that lets you run your business on one
+platform, seamlessly across all digital channels.
+
 -- end: page
 
 
@@ -2204,6 +2210,98 @@ color: $inherited.colors.text
 
 -- end: testimonials-card-details
 
+
+
+
+
+
+
+
+
+
+
+-- component faqs:
+caption title:
+body body:
+common.faq list faqs-list:
+string id: faqs
+
+-- ftd.column:
+id: $faqs.id
+padding-top.px if {ftd.device != "mobile"}: 50
+padding-bottom.px if {ftd.device != "mobile"}: 70
+width: fill-container
+align-content: center
+spacing.fixed.px: 29
+classes: section
+
+-- ftd.text: $faqs.title
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+
+-- ftd.text:
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+$faqs.body
+
+-- ftd.row:
+width: fill-container
+wrap: true
+align-content: center
+
+-- faqs-list-detail:
+$loop$: $faqs.faqs-list as $obj
+title: $obj.title
+icon: $obj.icon
+body: $obj.body
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: faqs
+
+
+
+
+
+
+
+
+
+
+-- component faqs-list-detail:
+caption title: 
+optional body body:
+optional ftd.image-src icon:
+optional boolean $toggle: false
+
+-- ftd.column:
+width.fixed.px: 612
+padding-top.px: 40
+padding-bottom.px: 20
+padding-horizontal.px: 40
+spacing.fixed.px: 20
+width if { ftd.device == "mobile"}: fill-container
+align-self: center
+spacing.fixed.px if { ftd.device == "mobile"}: 25
+
+-- ftd.text: $faqs-list-detail.title
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text-strong
+style: bold
+
+-- ftd.text:
+if: { $faqs-list-detail.body != NULL }
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+
+$faqs-list-detail.body
+
+-- end: ftd.column
+
+-- end: faqs-list-detail
 
 
 
