@@ -99,19 +99,19 @@ experiences that look awesome and put your brand centerstage.
 - Welcome Studio gives you all the tools you need to create and host virtual
 experiences that look awesome and put your brand centerstage.
 
--- hero-bottom-hug: We transform ideas into digital outcomes.
+-- ws.hero-bottom-hug: We transform ideas into digital outcomes.
 image: $assets.files.assets.hero-bottom-hug.jpg
 
 We are an award-winning strategic design company that provides consultancy
 services and help you create outstanding digital products.
 
--- client-card: Trusted by the top companies in this industry
+-- ws.client-card: Trusted by the top companies in this industry
 client-list: $common.list-of-clients
 
--- testimonials-card: Here’s what our amazing clients are saying
+-- ws.testimonials-card: Here’s what our amazing clients are saying
 testimonials: $common.list-of-testimonials
 
--- faqs: Frequently Asked Questions
+-- ws.faqs: Frequently Asked Questions
 faqs-list: $common.list-of-faqs
 
 Flex is the only saas business platform that lets you run your business on one
@@ -4254,6 +4254,219 @@ role: $inherited.types.copy-small
 -- end: ftd.row
 
 -- end: feature-loop
+
+
+
+
+
+
+
+
+
+
+-- component team:
+optional string tag:
+optional caption title:
+optional body body:
+ftd.ui list members:
+
+-- ftd.column:
+
+-- ftd.desktop:
+
+-- team-desktop: $team.title
+tag: $team.tag
+members: $team.members
+
+$team.body
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- team-mobile: $team.title
+tag: $team.tag
+members: $team.members
+
+$team.body
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: team
+
+
+
+
+
+
+
+
+
+
+-- component team-desktop:
+optional string tag:
+optional caption title:
+optional body body:
+ftd.ui list members:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+color: $inherited.colors.text-strong
+
+-- ftd.text: $team-desktop.tag
+if: {team-desktop.tag != NULL }
+color: $inherited.colors.custom.ten
+role: $inherited.types.copy-regular
+margin-bottom.px: 16
+
+-- ftd.text: $team-desktop.title
+if: { $team-desktop.title != NULL }
+role: $inherited.types.heading-medium
+text-align: center
+style: regular
+margin-bottom.px: 32
+
+-- ftd.text:
+if: { $team-desktop.body != NULL }
+role: $inherited.types.copy-regular
+margin-bottom.px: 32
+width.fixed.percent: 70
+text-align: center
+
+$team-desktop.body
+
+-- ftd.row:
+width: fill-container
+children: $team-desktop.members
+spacing.fixed.px: 32
+wrap: true
+align-content: center
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: team-desktop
+
+
+
+
+
+
+
+
+
+
+-- component team-mobile:
+optional string tag:
+optional caption title:
+optional body body:
+ftd.ui list members:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+color: $inherited.colors.text-strong
+
+-- ftd.text: $team-mobile.tag
+if: {team-mobile.tag != NULL }
+color: $inherited.colors.custom.one
+role: $inherited.types.copy-large
+margin-bottom.px: 16
+
+-- ftd.text: $team-mobile.title
+if: {team-mobile.title != NULL }
+width: fill-container
+role: $inherited.types.heading-medium
+text-align: center
+style: regular
+margin-bottom.px: 32
+
+-- ftd.text:
+if: { $team-mobile.body != NULL }
+role: $inherited.types.copy-regular
+margin-bottom.px: 32
+
+$team-mobile.body
+
+-- ftd.column:
+width: fill-container
+children: $team-mobile.members
+spacing.fixed.px: 16
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: team-mobile
+
+
+
+
+
+
+
+
+
+
+-- component member:
+string profile:
+caption title:
+body body:
+boolean $hover: false
+ftd.image-src image:
+
+-- ftd.column:
+width.fixed.percent: 30
+width if { ftd.device == "mobile" }: fill-container
+$on-mouse-enter$: $ftd.set-bool($a = $member.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $member.hover, v = false)
+;;border-color if { member.hover } : $inherited.colors.border-strong
+spacing.fixed.px: 32
+margin-bottom.px: 32
+
+-- ftd.image:
+src: $member.image
+width: fill-container
+border-radius.px: 20
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 8
+padding-horizontal.px: 12
+
+-- ftd.row:
+width: fill-container
+align-content: center
+spacing: space-between
+
+-- ftd.text: $member.title
+role: $inherited.types.heading-small
+color: $inherited.colors.text
+color if { member.hover }: $inherited.colors.text-strong
+border-radius.px: 20
+style: medium
+
+-- ftd.text: $member.profile
+color: $inherited.colors.text-strong
+role: $inherited.types.fine-print
+
+-- end: ftd.row
+
+-- ftd.text:
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+$member.body
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: member
 
 
 
