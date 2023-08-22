@@ -2,6 +2,7 @@
 -- import: fastn/processors as pr
 -- import: gsalunke.github.io/aiglesoft/common
 -- import: fastn-community.github.io/opensans-typography
+-- import: cs
 
 -- boolean $tc-pop-up-status: false
 
@@ -89,7 +90,7 @@ consultancy services and help you create outstanding digital products.
 - I am dummy pointer text. 
 
 -- cta-left-hug: Welcome Studio most valuable visitors
-tag: Analyze
+tag: ANALYZE
 image: $assets.files.assets.hero-image.jpg
 
 - Welcome Studio gives you all the tools you need to create and host virtual
@@ -107,7 +108,7 @@ services and help you create outstanding digital products.
 -- client-card: Trusted by the top companies in this industry
 client-list: $common.list-of-clients
 
--- testimonials-card: Our Clients
+-- testimonials-card: Here’s what our amazing clients are saying
 testimonials: $common.list-of-testimonials
 
 -- faqs: Frequently Asked Questions
@@ -153,7 +154,7 @@ optional pr.toc-item current-subsection: $common.sitemap.current-subsection
 optional pr.toc-item current-page: $common.sitemap.current-page
 children wrapper:
 ftd.type-data types: $opensans-typography.types
-ftd.color-scheme colors: $ftd.default-colors
+ftd.color-scheme colors: $cs.main
 ftd.ui list right-sidebar:
 boolean sidebar: false
 boolean show-footer: $common.show-footer
@@ -186,7 +187,7 @@ if: { page.show-banner }
 width: fill-container
 children: $page.banner
 align-content: center
-max-width.fixed.px: $common.max-width
+;;max-width.fixed.px: $common.max-width
 
 -- end: ftd.column
 
@@ -250,7 +251,7 @@ if: { page.show-footer }
 width: fill-container
 children: $page.footer
 align-self: center
-max-width.fixed.px: $common.max-width
+;;max-width.fixed.px: $common.max-width
 
 -- end: ftd.column
 
@@ -861,6 +862,7 @@ align-self: center
 
 -- ftd.text: $hero-right-hug-expanded.title
 role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
 
 -- ftd.text:
 role: $inherited.types.copy-regular
@@ -931,9 +933,6 @@ align-content: center
 $on-mouse-enter$: $ftd.set-bool($a = $button-solid.cta-hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button-solid.cta-hover, v = false)
 link: $button-solid.cta-link
-border-width.px: 2
-border-color: $inherited.colors.border
-border-color if { button-solid.cta-hover }: $inherited.colors.cta-primary.border
 border-radius.px: 6
 spacing.fixed.px: 12
 
@@ -1004,17 +1003,17 @@ spacing.fixed.px: 24
 
 -- ftd.text: $cta-left-hug.tag
 if: { cta-left-hug.tag != NULL }
-background.solid: $inherited.colors.accent.primary
+background.solid: $inherited.colors.info.base
 color: $inherited.colors.info.text
 border-radius.px: 30
 padding-vertical.px: 5
-role: $inherited.types.link
+role: $inherited.types.button-small
 padding-horizontal.px: 11
 
 -- ftd.text: $cta-left-hug.title
 if: { cta-left-hug.title != NULL }
 role: $inherited.types.heading-large
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 
 -- ftd.text: 
 if: { cta-left-hug.body != NULL }
@@ -1052,11 +1051,11 @@ width: fill-container
 
 -- ftd.text: $cta-left-hug.tag
 if: { cta-left-hug.tag != NULL }
-background.solid: $inherited.colors.accent.primary
+background.solid: $inherited.colors.info.base
 color: $inherited.colors.info.text
 border-radius.px: 30
 padding-vertical.px: 5
-role: $inherited.types.link
+role: $inherited.types.button-small
 padding-horizontal.px: 11
 
 -- ftd.text: $cta-left-hug.title
@@ -1126,17 +1125,17 @@ spacing.fixed.px: 24
 
 -- ftd.text: $cta-right-hug.tag
 if: { cta-right-hug.tag != NULL }
-background.solid: $inherited.colors.accent.primary
+background.solid: $inherited.colors.info.base
 color: $inherited.colors.info.text
 border-radius.px: 30
 padding-vertical.px: 5
-role: $inherited.types.link
+role: $inherited.types.button-small
 padding-horizontal.px: 11
 
 -- ftd.text: $cta-right-hug.title
 if: { cta-right-hug.title != NULL }
 role: $inherited.types.heading-large
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 
 -- ftd.text: 
 if: { cta-right-hug.body != NULL }
@@ -1180,11 +1179,11 @@ $on-mouse-leave$: $ftd.set-bool($a = $cta-right-hug.mouse-in, v = false)
 
 -- ftd.text: $cta-right-hug.tag
 if: { cta-right-hug.tag != NULL }
-background.solid: $inherited.colors.accent.primary
+background.solid: $inherited.colors.info.base
 color: $inherited.colors.info.text
 border-radius.px: 30
 padding-vertical.px: 5
-role: $inherited.types.link
+role: $inherited.types.button-small
 padding-horizontal.px: 11
 
 -- ftd.text: $cta-right-hug.title
@@ -1304,7 +1303,7 @@ height.fixed.px: 66
 width.fixed.px: 80
 border-top-right-radius.px: 24
 border-bottom-left-radius.px: 24
-background.solid: $inherited.colors.background.overlay
+background.solid: $inherited.colors.cta-primary.base
 align-content: center
 
 -- ftd.image:
@@ -1315,8 +1314,9 @@ width.fixed.px: 46
 
 -- ftd.text: $features-card-details.title
 link: $features-card-details.link
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-large
 color: $inherited.colors.text-strong
+style: semi-bold
 
 -- ftd.text:
 role: $inherited.types.copy-small
@@ -1491,7 +1491,7 @@ optional boolean is-first:
 optional boolean is-last:
 
 -- ftd.row:
-width.fixed.px: 412
+width.fixed.px: 380
 spacing.fixed.px: 32
 align-content: center
 align-self: center
@@ -1573,15 +1573,16 @@ width: fill-container
 spacing.fixed.px: 80
 padding-vertical.px: 111
 padding-horizontal.px: 50
+background.solid: $inherited.colors.background.step-1
 
 -- ftd.column:
-width.fixed.px: 720
+width.fixed.percent: 60
 spacing.fixed.px: 17
 padding-top.px: 30
 
 -- ftd.text: $logo-cloud-desktop.tag
 if: { logo-cloud-desktop.tag != NULL }
-background.solid: $inherited.colors.accent.primary
+background.solid: $inherited.colors.info.base
 color: $inherited.colors.info.text
 border-radius.px: 30
 padding-vertical.px: 5
@@ -1604,6 +1605,7 @@ $logo-cloud-desktop.body
 width: fill-container
 wrap: true
 spacing.fixed.px: 10
+align-content: center
 
 -- logo-lists: $obj.title
 $loop$: $logo-cloud-desktop.logo-list as $obj
@@ -1634,15 +1636,18 @@ common.logos list logo-list:
 -- ftd.column:
 width: fill-container
 spacing.fixed.px: 24
-padding-top.px: 80
+background.solid: $inherited.colors.background.step-1
+padding-vertical.px: 24
 
 -- ftd.column:
+width: fill-container
 spacing.fixed.px: 17
 padding-top.px: 30
+padding-horizontal.px: 24
 
 -- ftd.text: $logo-cloud-mobile.tag
 if: { logo-cloud-mobile.tag != NULL }
-background.solid: $inherited.colors.accent.primary
+background.solid: $inherited.colors.info.base
 color: $inherited.colors.info.text
 border-radius.px: 30
 padding-vertical.px: 5
@@ -1662,6 +1667,7 @@ $logo-cloud-mobile.body
 -- end: ftd.column
 
 -- ftd.column:
+padding-horizontal.px: 24
 wrap: true
 spacing.fixed.px: 10
 width: fill-container
@@ -1694,7 +1700,7 @@ body body:
 width.fixed.px: 362
 width if { ftd.device == "mobile"}: fill-container
 background.solid: $inherited.colors.background.base
-shadow: $shadow
+;;shadow: $shadow
 padding.px: 32
 spacing.fixed.px: 24
 
@@ -1703,7 +1709,7 @@ height.fixed.px: 66
 width.fixed.px: 80
 border-top-right-radius.px: 24
 border-bottom-left-radius.px: 24
-background.solid: $inherited.colors.background.overlay
+background.solid: $inherited.colors.cta-primary.base
 align-content: center
 
 -- ftd.image:
@@ -1883,6 +1889,7 @@ string id: client-card
 -- ftd.column:
 width: fill-container
 id: $client-card.id
+align-content: center
 
 -- ftd.desktop:
 
@@ -1928,7 +1935,8 @@ color: $inherited.colors.text
 max-width.fixed.px: $common.max-width
 
 -- ftd.text: $client-card-desktop.title
-style: medium
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
 
 -- ftd.text:
 if: { client-card-desktop.body != NULL }
@@ -1971,6 +1979,7 @@ common.clients list client-list:
 width: fill-container
 spacing.fixed.px: 52
 padding-vertical.px: 60
+align-content: center
 
 -- ftd.column:
 spacing.fixed.px: 17
@@ -1978,6 +1987,7 @@ spacing.fixed.px: 17
 -- ftd.text: $client-card-mobile.title
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
+text-align: center
 
 -- ftd.text:
 if: { client-card-mobile.body != NULL }
@@ -2046,7 +2056,7 @@ string id: testimonials
 -- ftd.column:
 width: fill-container
 id: $testimonials-card.id
-classes: section
+background.solid: $inherited.colors.cta-primary.base
 
 -- ftd.desktop: 
 
@@ -2082,19 +2092,21 @@ common.testimonial list testimonials:
 -- ftd.column:
 padding-vertical.px: 50
 width: fill-container
-spacing.fixed.px: 32
+spacing.fixed.px: 48
 align-content: center
 
 -- ftd.text: $testimonials-card-desktop.title
 if: { testimonials-card-desktop.title != NULL }
-role: $inherited.types.heading-small
+role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
 
 -- ftd.row:
 width: fill-container
-wrap: true
-spacing.fixed.px: 24
+spacing.fixed.px: 48
 align-content: center
+overflow-x: auto
+max-width.fixed.percent: 80
+
 -- testimonials-card-details:
 $loop$: $testimonials-card-desktop.testimonials as $obj
 title: $obj.title
@@ -2164,13 +2176,13 @@ body body:
 optional integer index:
 
 -- ftd.column:
-width.fixed.px: 430
-background.solid: $inherited.colors.background.step-1
+width.fixed.px: 380
+background.solid: $inherited.colors.background.base
 width if { ftd.device == "mobile"}: fill-container
-spacing.fixed.px: 32
+spacing.fixed.px: 24
 border-radius.px: 8
 padding.px: 32
-shadow: $shadow
+;;shadow: $shadow-14
 
 -- ftd.text: $testimonials-card-details.title
 if: { testimonials-card-details.title != NULL }
@@ -2178,7 +2190,7 @@ role: $inherited.types.heading-small
 color: $inherited.colors.text-strong
 
 -- ftd.text:
-role: $inherited.types.copy-large
+role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
 $testimonials-card-details.body
@@ -2197,9 +2209,10 @@ spacing.fixed.px: 2
 -- ftd.text: $testimonials-card-details.user
 role: $inherited.types.copy-regular
 color: $inherited.colors.text-strong
+style: semi-bold
 
 -- ftd.text: $testimonials-card-details.designation
-role: $inherited.types.copy-regular
+role: $inherited.types.fine-print
 color: $inherited.colors.text
 
 -- end: ftd.column
@@ -2315,3 +2328,11 @@ y-offset.px: 0
 blur.px: 6
 inset-body: false
 spread.px: 0
+
+-- ftd.shadow shadow-14:
+color: rgba(0, 59, 128, 0.15)
+x-offset.px: 2
+y-offset.px: 0
+blur.px: 14
+inset-body: false
+spread.px: 1
