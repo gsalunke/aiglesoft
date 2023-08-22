@@ -1,0 +1,99 @@
+
+-- ws.page:
+
+-- ws.pricing: Incredibly Easy To Use, But Surprisingly Powerful
+
+-- ws.pricing.body:
+
+Lorem ipsum dolor sit amet, consectet adipiscing elit. Suspendisse varius enim 
+in eros elementum tristique. consectet adipiscing elit. Suspendisse varius enim 
+in eros elementum tristique.
+
+-- ws.pricing.pricing-cards:
+
+-- ws.pricing-card: Starter
+active: false 
+price: 0
+currency: \$
+subscription: mo
+feature-list: $common.free-feature-list
+cta-text: Get Started
+cta-link: /pricing/
+
+Lorem ipsum dolor sit amet, consectet adipiscing elit.
+
+-- ws.pricing-card: Basic
+active: true 
+price: 99
+currency: \$
+subscription: mo
+feature-list: $common.startup-feature-list
+cta-text: Get Started
+cta-link: /pricing/
+
+Lorem ipsum dolor sit amet, consectet adipiscing elit.
+
+-- ws.pricing-card: Advanced
+active: false 
+price: 153
+currency: \$
+subscription: mo
+feature-list: $common.enterprise-feature-list
+cta-text: Get Started
+cta-link: /pricing/
+
+Lorem ipsum dolor sit amet, consectet adipiscing elit.
+
+-- end: ws.pricing.pricing-cards
+
+-- end: ws.pricing
+
+/-- aiglesoft.client-card: Trusted by the top companies in this industry
+client-list: $common.list-of-clients
+
+/-- aiglesoft.faqs: Frequently Asked Questions
+faqs-list: $common.list-of-faqs
+
+Flex is the only saas business platform that lets you run your business on one
+platform, seamlessly across all digital channels.
+
+-- end: ws.page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.shadow shadow:
+color: $shadow-color
+x-offset.px: 0
+y-offset.px: 2
+blur.px: 8
+inset-body: false
+
+-- ftd.color shadow-color:
+light: #00000026
+dark: #f6f5f557

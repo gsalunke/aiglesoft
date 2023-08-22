@@ -417,3 +417,74 @@ link: landing/
 
 -- end: list-of-clients
 
+
+
+
+
+
+
+
+
+
+-- record feature-pricing:
+caption title:
+boolean active: false
+
+
+
+-- feature-pricing list free-feature-list:
+
+-- feature-pricing: All the features
+active: true
+
+-- feature-pricing: All the features
+active: true
+
+-- feature-pricing: All the features
+
+-- feature-pricing: All the features
+
+-- feature-pricing: All the features
+
+-- end: free-feature-list
+
+
+
+-- feature-pricing list startup-feature-list:
+
+-- feature-pricing: All the features
+active: true
+
+-- feature-pricing: All the features
+active: true
+
+-- feature-pricing: All the features
+active: true
+
+-- feature-pricing: All the features
+
+-- feature-pricing: All the features
+
+-- end: startup-feature-list
+
+
+
+
+-- feature-pricing list enterprise-feature-list:
+
+-- feature-pricing: All the features
+active: true
+
+-- feature-pricing: All the features
+active: true
+
+-- feature-pricing: All the features
+active: true
+
+-- feature-pricing: All the features
+active: true
+
+-- feature-pricing: All the features
+active: true
+
+-- end: enterprise-feature-list
