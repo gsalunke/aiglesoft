@@ -4,7 +4,7 @@
 
 -- boolean show-footer: true
 
--- ftd.image-src site-logo: $assets.files.assets.aiglesoft-inc.svg
+-- ftd.image-src site-logo: $assets.files.assets.logo.svg
 
 -- integer logo-width: 180
 
@@ -209,29 +209,29 @@ optional string link:
 
 -- feature list list-of-features:
 
--- feature: Strategy
+-- feature: Market Research
 icon: $assets.files.assets.strategy.svg
-link: landing/
+link: services/
 
-We are an award-winning strategic design company
+Sed ut perspiciatis unde omnis iste natus
 
--- feature: Strategy
+-- feature: User Experience
 icon: $assets.files.assets.strategy.svg
-link: landing/
+link: services/
 
-We are an award-winning strategic design company
+Error sit voluptatem accusantium doloremque laudantium
 
--- feature: Strategy
+-- feature: Digital Marketing
 icon: $assets.files.assets.strategy.svg
-link: landing/
+link: services/
 
-We are an award-winning strategic design company
+Lorem ipsum dolor sit amet, consectetur adipiscing elit
 
--- feature: Strategy
+-- feature: SEO Services
 icon: $assets.files.assets.strategy.svg
-link: landing/
+link: services/
 
-We are an award-winning strategic design company
+Ut enim ad minima veniam, quis nostrum exercitationem
 
 -- end: list-of-features
 

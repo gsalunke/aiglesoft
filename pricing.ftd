@@ -1,4 +1,3 @@
-
 -- ws.page:
 
 -- ws.pricing: Incredibly Easy To Use, But Surprisingly Powerful
@@ -52,42 +51,3 @@ Lorem ipsum dolor sit amet, consectet adipiscing elit.
 client-list: $common.list-of-clients
 
 -- end: ws.page
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--- ftd.shadow shadow:
-color: $shadow-color
-x-offset.px: 0
-y-offset.px: 2
-blur.px: 8
-inset-body: false
-
--- ftd.color shadow-color:
-light: #00000026
-dark: #f6f5f557

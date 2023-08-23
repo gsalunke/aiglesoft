@@ -2,10 +2,10 @@
 -- import: typo
 -- import: gsalunke.github.io/aiglesoft/tnc
 -- import: gsalunke.github.io/aiglesoft as theme
-export: footer-badge, logo-cloud, content, banner-card, testimonials-card, features-card, faqs, tc-popup, tc-item, tc-item-item, featured-post, posts, h2, h3, markdown, post-card, post, image, row-container, contact-form, iframe, pricing, pricing-card, client-card, hero-right-hug-expanded, cta-left-hug, cta-right-hug, banner-card, team, member, hero-bottom-hug
-exposing: markdown, post, h3
+export: footer-badge, logo-cloud, content, banner-card, testimonials-card, features-card, faqs, tc-popup, tc-item, tc-item-item, featured-post, posts, h2, h3, markdown, post-card, post, image, row-container, contact-form, iframe, pricing, pricing-card, client-card, hero-right-hug-expanded, cta-left-hug, cta-right-hug, banner-card, team, member, hero-bottom-hug, author-bio
+exposing: markdown, post, h3 
 
--- ftd.image-src aiglesoft-logo: $assets.files.assets.aiglesoft-inc.svg
+-- ftd.image-src aiglesoft-logo: $assets.files.assets.logo.svg
 
 
 
@@ -104,7 +104,6 @@ caption title:
 common.post-meta post:
 optional body data:
 children uis:
-
 
 -- page:
 blog: true
