@@ -1,0 +1,41 @@
+-- ws.page:
+
+-- ws.hero-bottom-hug: We transform ideas into digital outcomes.
+image: $assets.files.assets.hero-bottom-hug.jpg
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+doloremque laudantium
+
+-- ws.features-card: We make your business gain more revenue at a glance
+features: $common.list-of-features
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua.
+
+-- ws.client-card: Fastn is loved and trusted by thousands
+client-list: $common.list-of-clients
+
+-- ws.testimonials-card: All we do is dream and craft amazing products
+testimonials: $common.list-of-testimonials
+
+-- ws.cta-left-hug: Create a workflow that works for you
+tag: DATA INTEGRATION
+image: $assets.files.assets.hero-image.jpg
+
+Sodales tempor sapien quaerat ipsum undo congue laoreet turpis neque auctor
+turpis vitae dolor luctus placerat magna and ligula cursus purus vitae purus an
+ipsum suscipit
+
+- I am dummy pointer text.
+
+- I am dummy pointer text.
+
+- I am dummy pointer text.
+
+-- ws.banner-card: See how much faster you can get paid with fastn
+info-cards: $common.list-of-info-cards
+
+Use our calculator to see how many days we can free up in cash flow for your
+business.
+
+-- end: ws.page

@@ -4,7 +4,7 @@
 
 -- boolean show-footer: true
 
--- ftd.image-src site-logo: $assets.files.assets.aiglesoft-inc.svg
+-- ftd.image-src site-logo: $assets.files.assets.logo.svg
 
 -- integer logo-width: 180
 
@@ -210,33 +210,29 @@ optional string link:
 
 -- feature list list-of-features:
 
--- feature: Strategy and Consultancy
-icon: $assets.files.static.strategy.svg
-link: landing/
+-- feature: Market Research
+icon: $assets.files.assets.strategy.svg
+link: services/
 
-We are an award-winning strategic design company that provides consultancy
-services and help you create outstanding digital products.
+Sed ut perspiciatis unde omnis iste natus
 
--- feature: Strategy and Consultancy
-icon: $assets.files.static.strategy.svg
-link: landing/
+-- feature: User Experience
+icon: $assets.files.assets.strategy.svg
+link: services/
 
-We are an award-winning strategic design company that provides consultancy
-services and help you create outstanding digital products.
+Error sit voluptatem accusantium doloremque laudantium
 
--- feature: Strategy and Consultancy
-icon: $assets.files.static.strategy.svg
-link: landing/
+-- feature: Digital Marketing
+icon: $assets.files.assets.strategy.svg
+link: services/
 
-We are an award-winning strategic design company that provides consultancy
-services and help you create outstanding digital products.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit
 
--- feature: Strategy and Consultancy
-icon: $assets.files.static.strategy.svg
-link: landing/
+-- feature: SEO Services
+icon: $assets.files.assets.strategy.svg
+link: services/
 
-We are an award-winning strategic design company that provides consultancy
-services and help you create outstanding digital products.
+Ut enim ad minima veniam, quis nostrum exercitationem
 
 -- end: list-of-features
 
