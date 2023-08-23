@@ -10,7 +10,7 @@ doloremque laudantium, rem aperiam, eaque ipsa quae ab illo inventore
 
 -- common.post-meta meta1: New product launch event
 post-image: $assets.files.assets.featured.svg
-image: $assets.files.assets.avatar.svg
+image: $assets.files.assets.avatar.png
 author: $patrica.patrica
 post-url: blog-articles/sample-post-1/
 
@@ -18,7 +18,7 @@ Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
 -- common.post-meta meta2: We Transform ideas into digital outcomes.
 post-image: $assets.files.assets.post2.svg
-image: $assets.files.assets.avatar.svg
+image: $assets.files.assets.avatar.png
 author: $patrica.patrica
 post-url: blog-articles/sample-post-1/
 
@@ -26,6 +26,6 @@ Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
 -- common.post-meta meta3: Bringing the world together through live experiences.
 post-image: $assets.files.assets.post1.svg
-image: $assets.files.assets.avatar.svg
+image: $assets.files.assets.avatar.png
 author: $patrica.patrica
 post-url: blog-articles/sample-post-1/
