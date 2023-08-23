@@ -3454,27 +3454,9 @@ padding-top.px: 16
 align-self: start
 width: fill-container
 
--- ftd.row:
-if: { featured-post-card-desktop.cta-primary != NULL }
-border-radius.px: 4
-background.solid: $inherited.colors.shadow
-spacing.fixed.px: 16
-padding-horizontal.px: 50
-padding-vertical.px: 16
-background.solid if { featured-post-card-desktop.mouse-in }: $inherited.colors.cta-primary.hover
-$on-mouse-enter$: $ftd.set-bool($a = $featured-post-card-desktop.mouse-in, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $featured-post-card-desktop.mouse-in, v = false)
-
--- ftd.text: $featured-post-card-desktop.cta-primary
-role: $inherited.types.button-large
-color: $inherited.colors.background.base
-link: $featured-post-card-desktop.cta-primary-url
-
--- ftd.image:
+-- button-solid: $featured-post-card-desktop.cta-primary
+cta-link: $featured-post-card-desktop.cta-primary-url
 src: $assets.files.assets.tick.svg
-align-self: center
-
--- end: ftd.row
 
 -- ftd.row:
 if: { featured-post-card-desktop.cta-secondary != NULL }
