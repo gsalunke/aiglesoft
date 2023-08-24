@@ -1,7 +1,7 @@
 -- import: gsalunke.github.io/aiglesoft/blog-meta/patrica
 
 -- common.post-meta meta: Keep your files safe with Martex
-post-image: $assets.files.assets.post2.svg
+post-image: $assets.files.assets.post2.jpg
 author: $patrica.patrica
 post-url: blog-articles/sample-post-1/
 
@@ -9,7 +9,7 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 doloremque laudantium, rem aperiam, eaque ipsa quae ab illo inventore 
 
 -- common.post-meta meta1: New product launch event
-post-image: $assets.files.assets.featured.svg
+post-image: $assets.files.assets.featured.jpg
 image: $assets.files.assets.avatar.png
 author: $patrica.patrica
 post-url: blog-articles/sample-post-1/
@@ -17,7 +17,7 @@ post-url: blog-articles/sample-post-1/
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
 -- common.post-meta meta2: We Transform ideas into digital outcomes.
-post-image: $assets.files.assets.post2.svg
+post-image: $assets.files.assets.post2.jpg
 image: $assets.files.assets.avatar.png
 author: $patrica.patrica
 post-url: blog-articles/sample-post-1/
@@ -25,7 +25,7 @@ post-url: blog-articles/sample-post-1/
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 
 -- common.post-meta meta3: Bringing the world together through live experiences.
-post-image: $assets.files.assets.post1.svg
+post-image: $assets.files.assets.post1.jpg
 image: $assets.files.assets.avatar.png
 author: $patrica.patrica
 post-url: blog-articles/sample-post-1/

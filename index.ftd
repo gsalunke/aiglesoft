@@ -1,6 +1,5 @@
 -- import: gsalunke.github.io/aiglesoft/header as h
 -- import: fastn/processors as pr
--- import: gsalunke.github.io/aiglesoft/common
 -- import: fastn-community.github.io/typography
 export: markdown,h0,h1,h2,h3
 

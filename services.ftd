@@ -1,7 +1,7 @@
 -- ws.page:
 
--- ws.hero-bottom-hug: We transform ideas into digital outcomes.
-image: $assets.files.assets.hero-bottom-hug.jpg
+-- ws.hero-bottom-hug: Place your business at the top of search engines
+image: $assets.files.assets.back-img.jpg
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 doloremque laudantium
@@ -11,6 +11,12 @@ features: $common.list-of-features
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua.
+
+-- ws.banner-card: See how much faster you can get paid with fastn
+info-cards: $common.list-of-info-cards
+
+Use our calculator to see how many days we can free up in cash flow for your
+business.
 
 -- ws.client-card: Fastn is loved and trusted by thousands
 client-list: $common.list-of-clients
@@ -31,11 +37,5 @@ ipsum suscipit
 - I am dummy pointer text.
 
 - I am dummy pointer text.
-
--- ws.banner-card: See how much faster you can get paid with fastn
-info-cards: $common.list-of-info-cards
-
-Use our calculator to see how many days we can free up in cash flow for your
-business.
 
 -- end: ws.page
