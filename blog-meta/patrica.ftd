@@ -1,7 +1,7 @@
 -- common.author-meta patrica: Patrica AVA
 profile: UI Designer
 bio-url: blog-meta/patrica/
-image: $assets.files.assets.avatar.svg
+image: $assets.files.assets.avatar.png
 company: Acme Inc.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
